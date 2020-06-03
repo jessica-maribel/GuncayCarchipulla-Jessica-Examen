@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link href="CSS/parqueadoro.css" type="text/css" rel="stylesheet"/>
+        <title>
+            Parqueadero
+        </title>
+    </head>
+    <body>
+        <header>
+            <a href = "parqueadero.html"><img src= "imagenes/logo.png"/></a>
+            <h1>Bienvenido .. !</h1>
+        </header>
+
+        <form id="formulario01" method="POST" action="../../../controladores/crear_usuario.php">
+
+            <label for="cedula">Bucar Cedula (*)</label>
+            <br>
+            <input type="text" id="cedula" name="cedula" value="" onkeyup="return validarCedula(this)"  placeholder="Ingrese el número de cedula ..."/>
+            <span id="mensajeCedula" class="error"></span>
+            
+            <br>
+    
+            <label for="fecha-hora-ing">Fecha y hora de ingreso (*)</label>
+            <br>
+            <input type="text" id="nombres" name="nombres" value="" placeholder="Ingrese fecha y hora de ingreso ..." onkeyup=""/>
+            <span id="" class="error"></span>
+            <br>
+    
+            <label for="fecha-hora-sal">Fecha y hora de salida (*)</label>
+            <br>
+            <input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese fecha y hora de salida ... " onkeyup=""/>
+            <span id="" class="error"></span>
+            <br>
+    
+            <label for="placa">Placa del Vehiculo (*)</label>
+            <br>
+            <input type="text" id="direccion" name="direccion" value="" placeholder="Ingrese la placa del Vehiculo ..." />
+            <span id="mensajePlaca" class="error"></span>
+            <br>
+            
+            <label for="marca">Marca del Vehiculo (*)</label>
+            <br>
+            <input type="text" id="tip_telefono" name="tip_telefono" onkeyup="]" value="" placeholder="Ingrese el marca del Vehiculo..." />
+            <span id="mensajeMarca" class="error"></span>
+            <br> 
+    
+            <label for="modelo">Modelo del Vehiculo (*)</label>
+            <br>
+            <input type="text" id="telefono" onkeyup=""  name="telefono" value="" placeholder="Ingrese el modelo del Vehiculo..." />
+            <span id="mensajeModelo" class="error"></span>
+            <br>
+    
+            <button type="submit" id="crear" name="crear" onclick="botonSubmit()" value="Aceptar">Aceptar </button>
+            <button type="reset" id="cancelar" name="cancelar" value="Cancelar">Cancelar </button>
+            <!--<input type="submit" id="crear" name="crear" value="Aceptar" />
+            <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />-->
+        </form>
+    </body>
+</html>
