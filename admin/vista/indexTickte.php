@@ -3,14 +3,14 @@
 <head>
  <meta charset="UTF-8">
  <title>Gestión de usuarios</title>
- <link href="../../public/vista/CSS/parqueadero.css" type="text/css"  rel="stylesheet"/>
- <script  type="text/javascript" src="../JavaScript/validacion.js"></script>
+ <link href="../../public/vista/CSS/indexTicket.css" type="text/css"  rel="stylesheet"/>
+ <script  type="text/javascript" src="../vista/JavaScript/validacion.js"></script>
 </head>
 <body>
     <header>
         <div class="prin">
-        <a href = "../publi/vista/imagenes/parqueadero.html"><img src= "imagenes/logo.png"/></a>
-            <input  type="text" id="buscar" name="buscar" size="40"   onkeyup="" placeholder="Buscar cedula ....."/> 
+        <a href = "../publi/vista/imagenes/parqueadero.html"><img id = "log" src= "../../public/vista/imagenes/logo.png"/></a>
+            <input  type="text" id="buscar" name="buscar" size="40"   onkeyup="return busquedaTelefono()" placeholder="Buscar cedula ....." /> 
             
         </div>     
     </header>

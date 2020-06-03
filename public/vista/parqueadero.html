@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <link href="CSS/parqueadoro.css" type="text/css" rel="stylesheet"/>
+        <link href="CSS/parqueadero.css" type="text/css" rel="stylesheet"/>
         <title>
             Parqueadero
         </title>
@@ -13,7 +13,7 @@
             <h1>Bienvenido .. !</h1>
         </header>
 
-        <form id="formulario01" method="POST" action="../../../controladores/crear_usuario.php">
+        <form id="formulario01" method="POST" action="../controladores/crear-ticket.php">
 
             <label for="cedula">Bucar Cedula (*)</label>
             <br>
@@ -22,18 +22,30 @@
             
             <br>
     
-            <label for="fec_hor_ing">Fecha y hora de ingreso (*)</label>
+            <label for="fec_ing">Fecha de ingreso (*)</label>
             <br>
-            <input type="text" id="fec_hor_ing" name="fec_hor_ing" value="" placeholder="Ingrese fecha y hora de ingreso ..." onkeyup=""/>
+            <input type="text" id="fec_ing" name="fec_ing" value="" placeholder="Ingrese fecha de ingreso ..." onkeyup=""/>
+            <span id="" class="error"></span>
+            <br>
+
+            <label for="hor_ing"> Hora de ingreso (*)</label>
+            <br>
+            <input type="text" id="hor_ing" name="hor_ing" value="" placeholder="Ingrese hora de ingreso ..." onkeyup=""/>
             <span id="" class="error"></span>
             <br>
     
-            <label for="fec_hor_sal">Fecha y hora de salida (*)</label>
+            <label for="fec_sal">Fecha de salida (*)</label>
             <br>
-            <input type="text" id="fec_hor_sal" name="fec_hor_sal" value="" placeholder="Ingrese fecha y hora de salida ... " onkeyup=""/>
+            <input type="text" id="fec_sal" name="fec_sal" value="" placeholder="Ingrese fecha  de salida ... " onkeyup=""/>
             <span id="" class="error"></span>
             <br>
     
+            <label for="hor_sal"> Hora de salida (*)</label>
+            <br>
+            <input type="text" id="hor_sal" name="hor_sal" value="" placeholder="Ingrese  hora de salida ... " onkeyup=""/>
+            <span id="" class="error"></span>
+            <br>
+
             <label for="placa">Placa del Vehiculo (*)</label>
             <br>
             <input type="text" id="direccion" name="direccion" value="" placeholder="Ingrese la placa del Vehiculo ..." />
