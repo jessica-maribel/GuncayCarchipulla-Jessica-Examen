@@ -6,6 +6,7 @@
 </head>
 <body>
     <?php
+      echo "<p>Hola mundo !!!</p>"; 
     //incluir conexión a la base de datos
     include '../../config/conexionBD.php';
     $cedula = isset($_POST["cedula"]) ? trim($_POST["cedula"]) : null;
